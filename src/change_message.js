@@ -21,7 +21,8 @@ const updateDOM = async () => {
     Array.prototype.concat(
         chrono.en.GB.parse(oldHTML),
         chrono.en.parse(oldHTML),
-        chrono.fr.parse(oldHTML)
+        chrono.fr.parse(oldHTML),
+        chrono.ja.parse(oldHTML)
     ).filter((result, index, self) => {
         // Make sure all previous results are before the current one
         const thisStart = result.index;
